@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Sidebar, Menu, MenuItem } from "react-pro-sidebar";
+import { Sidebar, Menu, MenuItem, sidebarClasses } from "react-pro-sidebar";
 import { Box, IconButton, Typography, useTheme } from "@mui/material";
 import { Link } from "react-router-dom";
 import { tokens } from "../../theme";
@@ -43,19 +43,19 @@ const Sidebars = () => {
   return (
     <Box
       sx={{
-        "& .pro-sidebar-inner": {
+        "& .ps-sidebar-container": {
           background: `${colors.primary[400]} !important`,
         },
-        "& .pro-icon-wrapper": {
+        "& .ps-menu-button": {
           backgroundColor: "transparent !important",
         },
-        "& .pro-inner-item": {
+        "& .ps-menu-icon": {
           padding: "5px 35px 5px 20px !important",
         },
-        "& .pro-inner-item:hover": {
+        "& .ps-menu-button:hover": {
           color: "#868dfb !important",
         },
-        "& .pro-menu-item.active": {
+        "& .ps-active": {
           color: "#6870fa !important",
         },
       }}
@@ -109,7 +109,7 @@ const Sidebars = () => {
                   Haris Mohanty
                 </Typography>
                 <Typography variant="h5" color={colors.greenAccent[500]}>
-                   Admin
+                  Admin
                 </Typography>
               </Box>
             </Box>

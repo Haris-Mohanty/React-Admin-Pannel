@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import Topbar from "./scenes/global/Topbar";
-import Sidebar from "./scenes/global/Sidebar";
+import Sidebars from "./scenes/global/Sidebar";
 import Dashboard from "./scenes/dashboard";
 // import Team from "./scenes/team";
 // import Invoices from "./scenes/invoices";
@@ -23,7 +23,7 @@ function App() {
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <div className="app">
-          <Sidebar />
+          <Sidebars />
           <main className="content">
             <Topbar />
             <Routes>

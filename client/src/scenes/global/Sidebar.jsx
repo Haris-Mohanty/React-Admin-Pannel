@@ -21,6 +21,7 @@ const Item = ({ title, to, icon, selected, setSelected }) => {
   const colors = tokens(theme.palette.mode);
   return (
     <MenuItem
+      component={<Link to={to} />}
       active={selected === title}
       style={{
         color: colors.grey[100],
@@ -29,7 +30,6 @@ const Item = ({ title, to, icon, selected, setSelected }) => {
       icon={icon}
     >
       <Typography>{title}</Typography>
-      <Link to={to} />
     </MenuItem>
   );
 };

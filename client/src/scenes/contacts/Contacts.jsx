@@ -56,7 +56,7 @@ const Contacts = () => {
     <Box m="20px">
       <Header
         title="CONTACTS"
-        subtitle="List of Contacts for Future Reference"
+        subtitle="List of Contacts for Future Reference."
       />
       <Box
         m="40px 0 0 0"

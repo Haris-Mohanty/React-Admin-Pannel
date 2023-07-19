@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Sidebar, Menu, MenuItem, sidebarClasses } from "react-pro-sidebar";
+import { Sidebar, Menu, MenuItem } from "react-pro-sidebar";
 import { Box, IconButton, Typography, useTheme } from "@mui/material";
 import { Link } from "react-router-dom";
 import { tokens } from "../../theme";
@@ -50,7 +50,7 @@ const Sidebars = () => {
           backgroundColor: "transparent !important",
         },
         "& .ps-menu-icon": {
-          padding: "5px 35px 5px 20px !important",
+          padding: "5px 20px 5px 10px !important",
         },
         "& .ps-menu-button:hover": {
           color: "#868dfb !important",
@@ -69,6 +69,7 @@ const Sidebars = () => {
             style={{
               margin: "10px 0 20px 0",
               color: colors.grey[100],
+              transition: "0.5s",
             }}
           >
             {!isCollapsed && (
@@ -78,8 +79,8 @@ const Sidebars = () => {
                 alignItems="center"
                 ml="15px"
               >
-                <Typography variant="h3" color={colors.grey[100]}>
-                  ADMINIS
+                <Typography variant="h4" color={colors.grey[100]}>
+                  Admin Pannel
                 </Typography>
                 <IconButton onClick={() => setIsCollapsed(!isCollapsed)}>
                   <MenuOutlinedIcon />
@@ -89,7 +90,7 @@ const Sidebars = () => {
           </MenuItem>
 
           {!isCollapsed && (
-            <Box mb="25px">
+            <Box mb="10px">
               <Box display="flex" justifyContent="center" alignItems="center">
                 <img
                   alt="profile-user"
@@ -115,7 +116,7 @@ const Sidebars = () => {
             </Box>
           )}
 
-          <Box paddingLeft={isCollapsed ? undefined : "10%"}>
+          <Box paddingLeft={isCollapsed ? undefined : "5%"}>
             <Item
               title="Dashboard"
               to="/"

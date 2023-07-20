@@ -5,7 +5,7 @@ import Dashboard from "./scenes/dashboard/index";
 import Team from "./scenes/team/Team";
 import Contacts from "./scenes/contacts/Contacts";
 import Invoices from "./scenes/invoices/Invoices";
-import Form from "./scenes/form";
+import Form from "./scenes/form/Form";
 // import Bar from "./scenes/bar";
 // import Line from "./scenes/line";
 // import Pie from "./scenes/pie";

@@ -1,11 +1,13 @@
-import React from 'react'
+import { Box } from "@mui/material";
+import React from "react";
+import Header from "../../components/Header";
 
 const FAQ = () => {
   return (
-    <div>
-      
-    </div>
-  )
-}
+    <Box m={"20px"}>
+      <Header title={"FAQ"} subtitle={"Frequently Asked Questions Page."} />
+    </Box>
+  );
+};
 
-export default FAQ
+export default FAQ;

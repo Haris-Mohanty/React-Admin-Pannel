@@ -10,10 +10,18 @@ import { tokens } from "../../theme";
 
 const FAQ = () => {
   const theme = useTheme();
-  const tokens = tokens(theme.palette.mode);
+  const colors = tokens(theme.palette.mode);
   return (
     <Box m={"20px"}>
       <Header title={"FAQ"} subtitle={"Frequently Asked Questions Page."} />
+
+      <Accordion defaultExpanded>
+        <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+          <Typography color={colors.greenAccent[500]}>
+            An Important Question
+          </Typography>
+        </AccordionSummary>
+      </Accordion>
     </Box>
   );
 };

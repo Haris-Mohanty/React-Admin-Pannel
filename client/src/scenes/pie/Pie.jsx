@@ -1,11 +1,13 @@
-import React from 'react'
+import React from "react";
+import { Box } from "@mui/material";
+import Header from "../../components/Header";
 
 const Pie = () => {
   return (
-    <div>
-      
-    </div>
-  )
-}
+    <Box>
+      <Header title={"Pie Chart"} subtitle={"Simple Pie Chart"} />
+    </Box>
+  );
+};
 
-export default Pie
+export default Pie;

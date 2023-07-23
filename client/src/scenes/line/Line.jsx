@@ -4,8 +4,8 @@ import Header from "../../components/Header";
 
 const Line = () => {
   return (
-    <Box>
-      <Header />
+    <Box m={"20px"}>
+      <Header title={"Line Chart"} subtitle={"Simple Line Chart."} />
     </Box>
   );
 };

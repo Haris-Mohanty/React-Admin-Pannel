@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../../components/Header";
-import { Box } from "@mui/material";
+import { Box, Button, IconButton, useTheme } from "@mui/material";
+import { tokens } from "../../theme";
 
 const Dashboard = () => {
   return (

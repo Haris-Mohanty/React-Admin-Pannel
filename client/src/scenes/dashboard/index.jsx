@@ -21,6 +21,7 @@ const Dashboard = () => {
       >
         <Header title={"DASHBOARD"} subtitle={"Welcome to your Dashboard!"} />
 
+        {/* DOWNLOAD REPORTS BUTTON */}
         <Box>
           <Button
             sx={{
@@ -36,6 +37,13 @@ const Dashboard = () => {
           </Button>
         </Box>
       </Box>
+      {/* GRID & CHARTS */}
+      <Box
+        display={"grid"}
+        gridColumn={"repeat(12, 1fr)"}
+        gridAutoRows={"140px"}
+        gap={"20px"}
+      ></Box>
     </Box>
   );
 };
